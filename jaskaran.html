@@ -1,1 +1,86 @@
-<h1>Write whatever you want here</h1>
+<!DOCTYPE html>
+<head>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://d14aee3vd5s19j.cloudfront.net/assets/two_finger-065c8cee2e528538dfada13259066e2c58f9418db90e04096ecdf7c5ccbc3e9a.png');
+      background-size: cover;
+      color: blue;
+    }
+    a {
+      color: blue;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      color:red
+      
+    }
+    
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://d14aee3vd5s19j.cloudfront.net/assets/two_finger-065c8cee2e528538dfada13259066e2c58f9418db90e04096ecdf7c5ccbc3e9a.png"
+    style=" width: 200";>
+    <h1>NBA BLOG</h1>
+    <ul>
+    
+      <li><a href="https://d14aee3vd5s19j.cloudfront.net/assets/two_finger-065c8cee2e528538dfada13259066e2c58f9418db90e04096ecdf7c5ccbc3e9a.png">NBA</a></li>
+      <li><a href="#">NBA CARES</a></li>
+      <li><a href="#">NBA FINALS</a></li>
+    </ul>
+    
+  </header>
+  <article>
+    <h2>NBA PLAYERS</h2>
+    <p> steph curry lebron james, kobe bryant.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>NBA CARES</h2>
+    <p>NBA PLAYERS PLAY FOR THE FANS IN THE CROWD.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2 NBA FINALS</h2>
+    <p>WARRIORS AND CELTICS</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
