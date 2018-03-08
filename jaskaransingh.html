@@ -4,8 +4,9 @@
   <title>jaskarans blog</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <style>
@@ -103,7 +104,48 @@
       </form>
       <br><br>
       
-      <p><span class="badge">2</span> Comments:</p><br>
+      <p><span class="badge"></span> Comments:</p><br>
+
+  <table>
+	<tr>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+		        <td><strong>Avatar</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="link">
+
+		</tbody>
+	    </table>
+	</td>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+			<td><strong>Name</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="title">
+
+		</tbody>
+	    </table>
+	</td>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+			<td><strong>Comment</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="remark">
+
+		</tbody>
+	    </table>
+	</td>
+	</tr>
+      </table>
       
       <div class="row">
         <div class="col-sm-2 text-center">
